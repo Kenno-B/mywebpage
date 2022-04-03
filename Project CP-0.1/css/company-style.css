@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300;400;500;600;700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: #FFF;
+	position: relative;
+	min-height: 100vh;
+}
+
+.header-nav {
+	position: relative;
+}
+
+header {
+	background-color: #F8F8FF;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 100px;
+}
+
+header .logo {
+	position: relative;
+	font-weight: 700;
+	color: #4036B3;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+header nav ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header nav ul li {
+	position: relative;
+	list-style: none;
+}
+
+header nav ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #4036B3;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+header nav ul li a:hover {
+	color: #FFFC4F;
+}
+
+.content img {
+	width: 100%;
+	height: 550px;
+	position: relative;
+	top: 127px;
+}
+
+.word-1 {
+	position: relative;
+	top: 300px;
+	left: 15%;
+	width: 70%;
+}
+
+.word-1 section {
+	text-align: center;
+}
+
+.word-1-btn button {
+	width: 150px;
+	padding: 10px 0;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 1px solid #1364F0;
+	background: rgb(252, 252, 0, 0.7);
+	color: #FFF;
+	cursor: pointer;
+}
+
+.word-1-btn button a {
+	text-decoration: none;
+	color: #4036B3;
+}
+
+.about-box {
+	position: relative;
+	top: 450px;
+}
+
+.wc-ce {
+	text-align: center;
+}
+
+.row-container .title h1, h2 {
+	display: inline-block;
+}
+
+.row-container h1 {
+	color: #FCFC00;
+}
+
+.row-container h2 {
+	color: #000;
+	font-size: 30px;
+}
+
+.wc-ce .line {
+	width: 70%;
+	border: 2px solid #4036B3;
+	margin-top: 20px;
+	margin-left: 15%;
+}
+
+.first-box-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+}
+
+.box-container {
+	width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.box-container .box {
+	position: relative;
+	width: 320px;
+	background: #FFF;
+	padding: 100px 40px 60px;
+	box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.box-container .box:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #4036B3;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.5s;
+}
+
+.box-container .box:hover:before {
+	transform: scaleY(1);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+}
+
+.box-container .box h2 {
+	position: absolute;
+	left: 40px;
+	top: 60px;
+	font-size: 4em;
+	font-weight: 800;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.box-container .box:hover h2 {
+	opacity: 1;
+	color: #FCFC00;
+	transform: translateY(-40px);
+}
+
+.box-container .box h3 {
+	position: absolute;
+	left: 40px;
+	top: 90px;
+	font-size: 1.5em;
+	z-index: 2;
+	color: #333;
+	transition: 0.5s;
+}
+
+.box-container .box p {
+	position: relative;
+	top: 20px;
+	text-align: left;
+	z-index: 2;
+	color: #555;
+	transition: 0.5s;
+}
+
+.box-container .box:hover h3, 
+.box-container .box:hover p {
+	color: #FCFC00;
+}
+
+.sb-bg, .hs_bg {
+	display: inline-block;
+}
+
+.sb-bg {
+	box-shadow: 0 1px 2px;
+	background-color: rgba(190, 213, 237, 0.3);
+	width: 49.9%;
+	height: 100px;
+}
+
+.sb-bg:hover {
+	box-shadow: 0 10px 15px;
+	background-color: rgba(190, 213, 237, 1.0);
+	width: 49.9%;
+	height: 100px;
+}
+
+.sb-container {
+	position: relative;
+}
+
+.sb-container img {
+	max-width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 10px;
+	left: 120px;
+}
+
+.sb-container span {
+	position: absolute;
+	top: 18px;
+	left: 40%;
+}
+
+.sb-container span a {
+	text-decoration: none;
+	color: #0370FF;
+}
+
+.hs-bg {
+	float: right;
+	box-shadow: 0 1px 2px;
+	background-color: rgba(190, 213, 237, 0.5);
+	width: 49.9%;
+	height: 100px;
+}
+
+.hs-bg:hover {
+	float: right;
+	box-shadow: 0 10px 15px;
+	background-color: rgba(190, 213, 237, 1.0);
+	width: 49.9%;
+	height: 100px;
+}
+
+.hs-container {
+	position: relative;
+}
+
+.hs-container img {
+	max-width: 90px;
+	height: 80px;
+	position: absolute;
+	top: 10px;
+	left: 120px;
+}
+
+.hs-container span {
+	position: absolute;
+	top: 25px;
+	left: 40%;
+}
+
+.icon-banner {
+	box-shadow: 0 1px 2px;
+	background-color: rgba(190, 213, 237, 0.5);
+	width: 100%;
+	height: 130px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px;
+	position: relative;
+}
+
+.shopping-icon span {
+	position: absolute;
+	top: 60px;
+	left: 120px;
+}
+
+.shopping-icon img {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+
+.shipping-icon span {
+	position: absolute;
+	top: 60px;
+	left: 600px;
+}
+
+.shipping-icon img {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: 20px;
+	left: 500px;
+}
+
+.home-icon span {
+	position: absolute;
+	top: 60px;
+	left: 1100px;
+}
+
+.home-icon img {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: 20px;
+	left: 1000px;
+}
+
+/*Footer*/
+.footer {
+	margin-top: 450px;
+	padding: 70px 0;
+	background-color: rgb(0, 0, 0, 0.8);
+	width: 100%;
+}
+
+.footer-container {
+	max-width: 1170px;
+	margin: auto;
+	text-align: center;
+}
+
+.footer-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 50px;
+}
+
+.footer-col ul {
+	list-style: none;
+	display: inline;
+}
+
+.footer-col ul li a {
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: 300;
+	color: #BBB;
+}
+
+.footer-col h4 {
+	font-size: 25px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #4036B3;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100%
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+}
+
+.footer-col .footer-social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #FFF;
+	margin: 0 2px 0 2px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: blue;
+}
+
+.footer-col .footer-social-links a:hover {
+	box-shadow: 0 12px 18px rgb(255, 255, 255);
+}
